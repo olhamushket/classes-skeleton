@@ -8,41 +8,41 @@ Estimated time - 40 minutes.
 
 Task #5 [Classes]
 
-Develop [Rectangle](src/main/java/com/epam/rd/qa/classes/Rectangle.java) and [ArrayRectangles](src/main/java/com/epam/rd/qa/classes/ArrayRectangles.java) classes with a predefined functionality.
+Develop [Rectangle](src/main/java/com/epam/rd/qa/classes/Rectangle.java) and [ArrayRectangles](src/main/java/com/epam/rd/qa/classes/ArrayRectangles.java) classes with the following features.
  
-### On a Common level it is obligatory:
+### General Level Task:
 
-To develop `Rectangle` class with following content:
-- 2 closed real fields `sideA` and `sideB` (sides А and В of the rectangle). 
-- Constructor with two real parameters `a` and `b` (parameters specify rectangle sides). 
-- Constructor with a real parameter a (parameter specify side А of a rectangle, side B is equal to A).
-- Constructor without parameters (side А of a rectangle equals to 4, side В - 3). 
-- Method `getSideA`, returning value of the side А.
-- Method `getSideВ`, returning value of the side В.
-- Method `area`, calculating and returning the area value.
-- Method `perimeter`, calculating and returning the perimeter value.
-- Method `isSquare`, checking whether current rectangle is shape square or not. Returns `true` if the shape is square and `false` in another case.
-- Method `replaceSides`, swapping rectangle sides. 
-- Override methods `equals` and `hashCode`.
+Develop `Rectangle` class with following content:
+- Private real fields `sideA` and `sideB` (sides А and В of the rectangle). 
+- Constructor with two real parameters `a` and `b` to specify the sides of the rectangle. 
+- Constructor with a real parameter side to specify the same values for sides A and B of the rectangle.
+- Constructor without parameters (initializes side A with 4 and side B with 3). 
+- Method `getSideA`, returns value of the side А.
+- Method `getSideВ`, returns value of the side В.
+- Method `area`, calculates and returning the area value.
+- Method `perimeter`, calculates and returning the perimeter value.
+- Method `isSquare`, checks whether current rectangle is shape square or not. Returns `true` if the shape is square and `false` in another case.
+- Method `replaceSides`, swaps rectangle sides. 
+- Override `equals` and `hashCode` methods.
+- Override `toString` method (optional, not tested).
 
-> It's recommended to implement `toString` method, but it is not tested.
+### Advanced Level Requirements:
 
-### On an Advanced level also needed:
+Complete the General Level Task
 
-Complete Level Low Assignment
-
-Develop class `ArrayRectangles`, in which declare:
+Develop `ArrayRectangles` class with the following content:
 
 - Private field `rectangleArray` - array of rectangles
-- Constructor creating an empty array of rectangles with given length. It should throw `IllegalArgumentException`, if length is negative or equals to zero. 
-- Constructor that receives an arbitrary amount of objects of type `Rectangle`
-  or an array of objects of type `Rectangle`. 
-  It should throw `IllegalArgumentException`, 
-  if array is `null` or length of array is equal to zero.
-  > It's guaranteed that array does not contain null values. 
-- Method `addRectangle` that adds a rectangle of type `Rectangle` to the array on the nearest free place and returning `true`, or returning `false`, if there is no free space in the array.
-- Method `size` that returns actual amount of elements in array. If `addRectangle` returns `true` this method should return new amount of elements. 
-- Method `numberMaxArea` that returns order number (index) of the first rectangle with the maximum area value in array (numeration starts from zero).
-- Method `numberMinPerimeter` that returns order number(index) of the first rectangle with the minimum perimeter value in array (numeration starts from zero).
-- Method `numberSquares` that returns the number of squares in the array of rectangles 
+- Constructor that creates a null-elements array of the given length. 
+  It should throw an `IllegalArgumentException` if the length is negative or zero. 
+- Constructor that receives an arbitrary number of `Rectangle` objects 
+  or an array of `Rectangle` objects. It should throw `IllegalArgumentException` 
+  if the array is `null` or the array length is zero.
+  > It's guaranteed that the array does not contain null values. 
+- Method `addRectangle` that adds a `Rectangle` object to the array at the nearest empty place and returns `true` or `false` if there is no free space in the array.
+- Method `size` that returns the actual amount of elements in the array. 
+  If `addRectangle` returns `true`, then this method should return new amount of elements. 
+- Method `indexMaxArea` that returns the index of the first rectangle with the maximum area in the array.
+- Method `indexMinPerimeter` that returns the index of the first rectangle with the minimum perimeter in the array.
+- Method `numberSquares` that returns the number of squares in the array. 
 

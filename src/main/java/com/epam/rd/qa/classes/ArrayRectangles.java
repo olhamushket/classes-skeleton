@@ -22,12 +22,12 @@ public class ArrayRectangles {
         throw new UnsupportedOperationException();
     }
 
-    public int numberMaxArea() {
+    public int indexMaxArea() {
         // TODO place your code here
         throw new UnsupportedOperationException();
     }
 
-    public int numberMinPerimeter() {
+    public int indexMinPerimeter() {
         // TODO place your code here
         throw new UnsupportedOperationException();
     }

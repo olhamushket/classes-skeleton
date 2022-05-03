@@ -90,8 +90,8 @@ class ArrayRectanglesTest {
     void testNumberMaxArea(ArrayRectangles rectangles,
                            int expectedMaxArea, int expectedMinPerimeter,
                            int expectedSquares) {
-        assertEquals(expectedMaxArea, rectangles.numberMaxArea());
-        assertEquals(expectedMinPerimeter, rectangles.numberMinPerimeter());
+        assertEquals(expectedMaxArea, rectangles.indexMaxArea());
+        assertEquals(expectedMinPerimeter, rectangles.indexMinPerimeter());
         assertEquals(expectedSquares, rectangles.numberSquares());
     }
 }
