@@ -6,13 +6,11 @@ Estimated time - 40 minutes.
 
 ## Description
 
-Task #5 [Classes]
-
 Develop [Rectangle](src/main/java/com/epam/rd/qa/classes/Rectangle.java) and [ArrayRectangles](src/main/java/com/epam/rd/qa/classes/ArrayRectangles.java) classes with the following features.
  
 ### General Level Task:
 
-Develop `Rectangle` class with following content:
+Develop [`Rectangle`](src/main/java/com/epam/rd/qa/classes/Rectangle.java) class with following content:
 - Private real fields `sideA` and `sideB` (sides А and В of the rectangle). 
 - Constructor with two real parameters `a` and `b` to specify the sides of the rectangle. 
 - Constructor with a real parameter side to specify the same values for sides A and B of the rectangle.
@@ -30,7 +28,7 @@ Develop `Rectangle` class with following content:
 
 Complete the General Level Task
 
-Develop `ArrayRectangles` class with the following content:
+Develop [`ArrayRectangles`](src/main/java/com/epam/rd/qa/classes/ArrayRectangles.java) class with the following content:
 
 - Private field `rectangleArray` - array of rectangles
 - Constructor that creates a null-elements array of the given length. 
