@@ -1,6 +1,6 @@
 # Classes
 
-The purpose of this exercise is to introduce you to inheritance in Java.
+The purpose of this exercise is to introduce you to class development in Java.
 
 Estimated time - 40 minutes.
 
